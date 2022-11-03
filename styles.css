@@ -64,11 +64,17 @@ table {
 body {
     font-family: 'DM Sans', sans-serif;
     width: 100%;
+    color: #15143966;
 }
 
 h1, h2, h3 {
     color: #1E0E62;
     font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 main, footer {
@@ -107,6 +113,11 @@ header a:hover {
     background-color: #fbfbfb;
 }
 
+header a:active {
+    transform: scale(1);
+    background-color: #fefefe;
+}
+
 .personal {
     display: flex;
     justify-content: space-between;
@@ -115,8 +126,9 @@ header a:hover {
 .personal img {
     max-width: 570px;
     height: 100%;
-    margin: 60px 120px 0 0px;
+    margin: 60px 100px 0 0px;
     border-radius: 15px;
+    margin-left: 50px;
 }
 
 .personal .description {
@@ -132,22 +144,56 @@ header a:hover {
     width: 70%;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.skills .description {
+    width: 60%;
+    margin: 100px 0 70px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.skills-list span {
+    width: 20%;
+    min-width: 250px;
+    max-width: 300px;
+}
+
 @media(max-width:1200px) {
+
+    .personal img {
+        width: 400px;
+    }
+
+}
+
+@media (max-width:1080px) {
 
     .personal {
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 0 30px 0 50px;
     }
 
     .personal .description, .personal img {
         margin: 0;
         padding: 0;
-        width: 570px;
     }
 
     .personal .description {
         margin: 80px 0;
+        max-width: 800px;
     }
 
     header h1, header a {
@@ -155,4 +201,30 @@ header a:hover {
         margin: 15px 30px;
     }
 
+
+
+
+
+    .skills {
+        text-align: left;
+        align-items: flex-start;
+        padding: 0 30px 0 50px;
+    }
+
+    .skills-list {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+        width: 100%;
+    }
+
+    .skills .description {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .skills span {
+        width: 100%;
+        max-width: 600px;
+    }
 }
