@@ -67,7 +67,6 @@ body {
     color: #15143966;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 h1, h2, h3 {
@@ -184,7 +183,7 @@ header a:active {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-width: 600px;
+    min-width: 400px;
     width: 70%;
 }
 
@@ -217,6 +216,7 @@ header a:active {
     object-fit: cover;
     object-position: 0;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .experience .projects {
@@ -287,5 +287,9 @@ header a:active {
         width: 100%;
         max-width: 600px;
         margin-bottom: 50px;
+    }
+
+    .experience .projects span {
+        width: 95%;
     }
 }
