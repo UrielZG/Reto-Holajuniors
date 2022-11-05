@@ -175,7 +175,7 @@ header a:active {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding: 80px 80px;
+    padding: 80px 80px 20px;
 }
 
 .experience .description {
@@ -226,11 +226,26 @@ header a:active {
 }
 
 .experience .projects span {
+    margin-right: 20px;
     width: 370px;
+    margin-bottom: 80px;
 }
 
+.experience span:nth-of-type(3n) {
+    margin-right: 0;
+}
 
+@media (max-width: 1309px) {
 
+    .experience .projects span {
+        margin-right: 30px;
+    }
+
+    .experience .projects span:nth-of-type(2n) {
+        margin-right: 0;
+    }
+
+}
 
 @media(max-width:1223px) {
 
@@ -241,7 +256,11 @@ header a:active {
     }
 }
 
-@media (max-width:919px) {
+footer img {
+    display: none;
+}
+
+@media (max-width:930px) {
 
     header {
         padding: 15px 30px;
@@ -262,8 +281,6 @@ header a:active {
     .personal .description {
         margin: 80px 0;
     }
-
-
 
     .skills {
         text-align: left;
@@ -290,6 +307,16 @@ header a:active {
     }
 
     .experience .projects span {
-        width: 95%;
+        width: 509px;
+        margin: 0;
+    }
+
+    .experience img {
+        /* width: 509px; */
+        height: 255px;
+    }
+
+    .experience {
+        padding: 30px;
     }
 }
