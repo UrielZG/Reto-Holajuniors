@@ -128,9 +128,9 @@ header a:active {
 }
 
 .personal img {
+    width: 40%;
     max-width: 570px;
-    height: 100%;
-    margin: 85px 85px 0 50px;
+    margin: 85px 85px auto 50px;
     border-radius: 15px;
 }
 
@@ -176,6 +176,7 @@ header a:active {
     flex-direction: column;
     align-items: center;
     padding: 80px 80px 20px;
+
 }
 
 .experience .description {
@@ -183,7 +184,7 @@ header a:active {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-width: 400px;
+    /* min-width: 400px; */
     width: 70%;
 }
 
@@ -235,6 +236,31 @@ header a:active {
     margin-right: 0;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 170px;
+}
+
+footer a {
+    color: #482BE7;
+    font-size: 48px;
+}
+
+.footer-social_media_icons {
+    display: flex;
+    align-items: center;
+    margin: 150px;
+    justify-content: space-between;
+    /* width: 20%; */
+}
+
+footer img {
+    width: 24px;
+    margin: 0 20px;
+}
+
 @media (max-width: 1309px) {
 
     .experience .projects span {
@@ -247,23 +273,27 @@ header a:active {
 
 }
 
-@media(max-width:1223px) {
+@media (max-width:947px) {
 
-    .personal img {
-        margin-top: 120px;
-        width: 80%;
-        max-width: 359px;
+    h2 {
+        font-size: 35px;
     }
-}
 
-footer img {
-    display: none;
-}
-
-@media (max-width:930px) {
+    .description p {
+        font-size: 18px;
+    }
 
     header {
-        padding: 15px 30px;
+        padding: 5px 30px 20px;
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        margin-top: 20px;
+    }
+
+    header a {
+        margin-top: 20px;
     }
 
     .personal {
@@ -276,6 +306,11 @@ footer img {
     .personal .description, .personal img {
         margin: 0;
         padding: 0;
+    }
+
+    .personal img {
+        width: 80%;
+        max-width: 500px;
     }
 
     .personal .description {
@@ -306,17 +341,38 @@ footer img {
         margin-bottom: 50px;
     }
 
-    .experience .projects span {
-        width: 509px;
-        margin: 0;
+    .experience .description a {
+        transform: scale(.8);
     }
 
-    .experience img {
-        /* width: 509px; */
-        height: 255px;
+    .experience .projects span {
+        width: 90%;
+        max-width: 509px;
+        margin: 10px 0;
     }
 
     .experience {
-        padding: 30px;
+        padding: 80px 20px;
     }
+
+    .experience img {
+        height: auto;
+    }
+
+    .experience p {
+        width: 97%;
+    }
+
+    footer a, footer h2 {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 412px) {
+
+    footer a, footer h2 {
+        font-size: 10px;
+    }
+
 }
